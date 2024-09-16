@@ -1,5 +1,5 @@
 {% set name = "qpax" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/kevin-tracy/qpax/archive/v{{ version }}.tar.gz
-  sha256: e1ce9192dce4a571ce2236687779040f9b7c122f6a64480ce9781924af8652a8
+  sha256: 8725bc8184217b6e2f3c0541182d3d30fc0f05d96e237a920866dee4c37038b8
 
 build:
   noarch: python
