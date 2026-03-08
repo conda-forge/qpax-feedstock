@@ -1,5 +1,5 @@
 {% set name = "qpax" %}
-{% set version = "0.0.9" %}
+{% set version = "0.0.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,17 +7,17 @@ package:
 
 source:
   url: https://github.com/kevin-tracy/qpax/archive/v{{ version }}.tar.gz
-  sha256: 8725bc8184217b6e2f3c0541182d3d30fc0f05d96e237a920866dee4c37038b8
+  sha256: 69e21c1f877927368645a9eb12128aa4277a407a20ccd14f8609b80811085d72
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=42
+    - hatchling
     - wheel
     - pip
   run:
